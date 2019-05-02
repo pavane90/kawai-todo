@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
   },
   input: {
     marginVertical: 15,
-    paddingLeft: 10,
-    width: width / 2
+    width: width / 2,
+    paddingBottom: 0
   }
 });
