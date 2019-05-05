@@ -1,3 +1,7 @@
+/*
+ * import
+ */
+
 import React from "react";
 import {
   StyleSheet,
@@ -13,8 +17,15 @@ import { AppLoading } from "expo";
 import ToDo from "./ToDo";
 import uuidv1 from "uuid/v1";
 
+/*
+ * 스크린 크기 가져옴
+ */
+
 const { height, width } = Dimensions.get("window");
 
+/*
+ * 메인
+ */
 export default class App extends React.Component {
   state = {
     newTodo: "",
@@ -53,6 +64,11 @@ export default class App extends React.Component {
       </View>
     );
   }
+
+  /*
+   * 각 기능구현
+   */
+
   _controllNewToDo = text => {
     this.setState({
       newTodo: text
@@ -89,6 +105,10 @@ export default class App extends React.Component {
     }
   };
 }
+
+/*
+ * 스타일시트부분 (나중에 분리)
+ */
 
 const styles = StyleSheet.create({
   container: {
