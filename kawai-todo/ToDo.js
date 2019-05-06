@@ -1,3 +1,7 @@
+/*
+ * import
+ */
+
 import React, { Component } from "react";
 import {
   View,
@@ -10,6 +14,7 @@ import {
 
 const { width, height } = Dimensions.get("window");
 
+// 여기서부터 코멘트 정리후 마무리
 export default class ToDo extends Component {
   state = {
     isEditing: false,
